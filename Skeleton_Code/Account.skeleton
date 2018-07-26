@@ -1,0 +1,33 @@
+public class Account
+{
+	private String username;
+	private String password;
+	private String name;
+	
+	//Constructor for the Account class
+	public Account(String username, String password, String name) {}
+
+	//Getter for username instance variable
+	public String getUsername() {}
+
+	//Setter for username instance variable
+	public void getUsername(String username) {}
+
+	//Getter for password instance variable
+	public String getPassword() {}
+
+	//Setter for password instance variable
+	public void setPassword() {}
+
+	//Getter for name instance variable
+	public String getName() {}
+
+	//Setter for name instance variable
+	public void setName() {}
+	
+	//Prints the contents of the library to the screen
+	public void viewLibrary() {}
+
+	//Searches the library for the keyword and prints the output to the console.
+	public void searchLibrary(String keyword) {}
+}

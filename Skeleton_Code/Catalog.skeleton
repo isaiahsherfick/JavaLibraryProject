@@ -1,0 +1,26 @@
+public class Catalog
+{
+	private ArrayList<Book> library;
+	
+	/**
+	*	We aren't sure about what kind of Collection we're going to use here yet, so I'm leaving it as a Collection in the skeleton code for part 1.
+	**/
+
+	//Constructor for the Catalog class
+	public Catalog() 
+	{
+		library = new ArrayList<Book>();
+	}
+
+	//Adds a book to the Catalog's library instance variable
+	public void addBook(Book book) 
+	{
+		library.add(book);
+	}
+
+	//Removes a book from the Catalog's library instance variable
+	public void removeBook(Book book) 
+	{
+		library.remove(book);
+	}
+}	

@@ -1,0 +1,22 @@
+public class Student extends Account 
+{
+	private String lendID;
+	private int penalty;
+	//This will be an int to avoid floating point errors.
+	private ArrayList<Book> listOfBooks;
+
+	//Constructor for the Student class
+	public Student(String username, String password, String name, String lendID) {}
+
+	//Returns a book the student has checked out
+	public returnBook(Book book) {}
+
+	//Checks out a book from the library
+	public checkOut(Book book) {}
+
+	//Lends a book to another Student
+	public lend(Book book, int numberOfDays, Student student) {}
+
+	//prints the contents of listOfBooks to the screen
+	public void viewBooks() {}
+}

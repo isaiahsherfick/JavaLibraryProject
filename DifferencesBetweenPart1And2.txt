@@ -1,0 +1,22 @@
+We made a whole bunch of changes between phases 1 and 2 of this project. In phase 1, we thought everything would work. 
+In phase 2, we learned we were horribly wrong. We discovered that String arrays don't implement Comparable, so we had 
+to create an additional class, LoginCredentials, which did so. This allowed us to use a map in our main driver to be 
+able to log in to the system without crashing it. We did NOT expect the driver to end up being almost 800 lines of code. 
+It involved WAY more input validation than we initially expected. We did not think about the nearly 20 options that would 
+be available to users depending on their account type, so we ended up with some gnarly conditional nests. We had to add a 
+plethora of new functions to our existing classes and the account inheritance hierarcy in particular. We simply didn't 
+have the foresight or experience with such a colossal project to see just how much functionality and information handling 
+was necessary to keep everything running smoothly. There was a lot of struggle with keeping track of where the books were,
+particularly when it came time to start implementing state persistence. There was many an IndexOutOfBounds exception to be had.
+While we have all had experience with reading and writing to files, none of us had actually implemented it seriously into a system
+that critically needed to work every time with so many moving parts. We had to modify a lot of the instance variables across the 
+classes of the system as we realized that some of them weren't very useful in the end. We also realized that some (which we didn't 
+already have) were sorely needed. When working with state persistence, we were quite unsure about how we would handle time. We decided
+against importing a library and reading through an API, and instead we went with the simpler option of just keeping track of how many days
+it's been since the system was installed. This kept our code more lightweight and ensured that nothing would break solely because
+of some gargantuan foreign library. It made our system less dependent on outside packages, which many libraries would appreciate. 
+If we were to do it again from the ground up, we'd like to think we would try to plan it better, but this is honestly the largest
+thing any of us had ever worked on up to this point, and it was very difficult to keep track of everything in the end. With more 
+experience, though, we'd have much cleaner relationships and responsibilities for our classes were we to re-do everything from the ground up.
+Ultimately, though, we learned a lot from this, and it was a great teaching tool. It gave us a taste of legitimate system development,
+and that's what we're really all after in the end.

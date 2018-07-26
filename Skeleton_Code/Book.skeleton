@@ -1,0 +1,20 @@
+public class Book
+{
+	private String authorName;
+	private String bookName;
+	private int isbnNumber;
+	private boolean isAvailable;
+	private ArrayList<Student> checkOuts;
+	private String genre;
+
+	//Constructor for the Book class
+	public Book(String authorName, String bookName, int isbnNumber, String genre) 
+	{
+		this.authorName = authorName;
+		this.bookName = bookName;
+		this.isbnNumber = isbnNumber;
+		this.genre = genre;
+		this.isAvailable = true;
+		this.checkOuts = new ArrayList<Book>();
+	}
+}

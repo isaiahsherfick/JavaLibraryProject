@@ -1,0 +1,23 @@
+public class LibraryDriver
+{
+	private Account currentUser;
+
+	//Runs automatically, adding penalties to offending Students with overdue books checked out.
+	public void addPenalty(int Amount) {}
+
+	//Returns the due dates of current books
+	//And prints them to the screen
+	public Collection viewDueDates() {}
+
+	//Reads the file with the stored information of the system. Runs on startup.
+	public void readFile() {}	
+
+	//Writes the state of the system to a file. Runs on exit.
+	public void writeFile() {}
+
+	//Prints the current user's options to the console.
+	public void displayOptions() {}
+	
+	//The main loop for the system
+	public static void main(String[] args) {}
+}

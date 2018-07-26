@@ -1,0 +1,17 @@
+public class Admin extends Account
+{
+	//Constructor for the Account class
+	public Account(String username, String password, String name) {}
+
+	//Removes an account from the system
+	public void removeAccount(String username) {}
+
+	//Adds a book to the Catalog
+	public void addBook(Book book) {}
+
+	//removes a book from the Catalog
+	public void removeBook(Book book) {}
+
+	//Prompts the user to change a book's info
+	public void changeBookInfo(String fieldToChange)
+}

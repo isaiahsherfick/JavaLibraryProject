@@ -1,0 +1,20 @@
+public class Librarian extends Account
+{
+	//Constructor for the Librarian class
+	public Librarian(String username, String password, String name) {}
+
+	//Prompts the librarian to modify a book's information
+	public void changeBookInfo(String fieldToChange) {}
+
+	//Adds a book to the Catalog
+	public void addBook(Book book) {}
+
+	//Removes a book from the Catalog
+	public void removeBook(Book book) {}
+
+	//Prints the books checked out to the console
+	public void viewCheckOuts() {}
+
+	//Prints the books checked out by a specific student to the console
+	public void viewCheckOuts(Student student) {}
+}	
